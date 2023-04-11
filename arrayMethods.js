@@ -61,7 +61,8 @@ console.log(fullName);
 //   { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 }
 // ]
 
-
+// kan ook zo:
+// inventors.sort((a, b) => a.year - b.year);
 
 inventors.sort((a, b) => {
   return a.year - b.year;
@@ -101,3 +102,6 @@ const specificInventor = inventors.find((inventor) => {
 });
 
 console.log(specificInventor);
+
+// kan ook zo:
+// const outcome = inventors.find(inventor => inventor.last === 'Edison');
